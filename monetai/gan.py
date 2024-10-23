@@ -66,7 +66,7 @@ class MonetGAN:
 
 def main():
     # Load and preprocess data
-    train_dataset = load_data()  # Implement in utils.py
+    train_dataset = utils.load_data()  # Implement in utils.py
 
     # Create and train the GAN
     gan = MonetGAN()
