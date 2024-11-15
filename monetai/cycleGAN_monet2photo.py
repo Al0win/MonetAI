@@ -108,7 +108,7 @@ print("Execution time is: ", execution_time)
 ############################################
 
 # Use the saved cyclegan models for image translation
-from instancenormalization import InstanceNormalization  
+from keras_contrib.layers.normalization.instancenormalization import InstanceNormalization
 from keras.models import load_model
 from matplotlib import pyplot
 from numpy.random import randint
