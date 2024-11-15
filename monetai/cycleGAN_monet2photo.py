@@ -22,27 +22,27 @@ def load_images(path, size=(256,256)):
 
 
 # dataset path
-path = 'monet2photo/'
+path = "../datasets/"
 
 # load dataset A - Monet paintings
-dataA_all = load_images(path + 'trainA/')
+dataA_all = load_images(path + 'monet_jpg/')
 print('Loaded dataA: ', dataA_all.shape)
 
 from sklearn.utils import resample
 #To get a subset of all images, for faster training during demonstration
 dataA = resample(dataA_all, 
                  replace=False,     
-                 n_samples=500,    
+                 n_samples=300,    
                  random_state=42) 
 
 # load dataset B - Photos 
-dataB_all = load_images(path + 'trainB/')
+dataB_all = load_images(path + 'photo_jpg/')
 print('Loaded dataB: ', dataB_all.shape)
 #Get a subset of all images, for faster training during demonstration
 #We could have just read the list of files and only load a subset, better memory management. 
 dataB = resample(dataB_all, 
                  replace=False,     
-                 n_samples=500,    
+                 n_samples=300,    
                  random_state=42) 
 
 # plot source images
