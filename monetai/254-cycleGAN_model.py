@@ -1,10 +1,6 @@
-# https://youtu.be/VzIO5_R9XEM
-# https://youtu.be/2MSGnkir9ew
+
 """
 cycleGAN model
-
-Based on the code by Jason Brownlee from his blogs on https://machinelearningmastery.com/
-I am adapting his code to various applications but original credit goes to Jason. 
 
 The model uses instance normalization layer:
 Normalize the activations of the previous layer at each step,
@@ -12,8 +8,7 @@ i.e. applies a transformation that maintains the mean activation
 close to 0 and the activation standard deviation close to 1.
 Standardizes values on each output feature map rather than across features in a batch. ​
 
-Download instance normalization code from here: https://github.com/keras-team/keras-contrib/blob/master/keras_contrib/layers/normalization/instancenormalization.py
-Or install keras_contrib using guidelines here: https://github.com/keras-team/keras-contrib 
+Install keras_contrib using guidelines here: https://github.com/keras-team/keras-contrib 
 """
 
 #
@@ -33,9 +28,6 @@ from keras.layers import LeakyReLU
 from keras.layers import Activation
 from keras.layers import Concatenate
 from keras_contrib.layers.normalization.instancenormalization import InstanceNormalization
-
-#Download instance norm. code from the link above.
-#Or install keras_contrib using guidelines here: https://github.com/keras-team/keras-contrib 
 
 from matplotlib import pyplot
 

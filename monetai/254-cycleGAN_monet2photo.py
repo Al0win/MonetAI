@@ -1,12 +1,3 @@
-# https://youtu.be/VzIO5_R9XEM
-# https://youtu.be/2MSGnkir9ew
-"""
-Cycle GAN: Monet2Photo
-
-Dataset from https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/
-
-"""
-
 # monet2photo
 from os import listdir
 from numpy import asarray
