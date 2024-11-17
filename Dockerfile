@@ -1,6 +1,9 @@
 # Use the official CUDA base image with TensorFlow support
 FROM nvidia/cuda:12.3.0-base-ubuntu22.04
 
+# Install CUDA
+RUN apt-get update && apt-get install -y cuda
+
 # Set environment variables for non-interactive installs
 ENV DEBIAN_FRONTEND=noninteractive
 
@@ -10,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     libcudnn8 \
     libcudnn8-dev \
     && apt-get clean
-    
+
 # Install Python 3, pip, and other necessary dependencies
 RUN apt-get update && apt-get install -y \
     python3 python3-pip \
