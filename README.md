@@ -2,27 +2,26 @@ Hey!
 
 This is the project I created for my Generative AI Course.
 
+
+
 ## Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/MonetAI.git
+git clone https://github.com/Al0win/MonetAI.git
 cd MonetAI
 ```
 
 2. Create and activate conda environment:
 ```bash
-conda create -n monet python=3.8
+conda create -n monet python=3.10.12
 conda activate monet
 ```
 
 3. Install the package:
 ```bash
-# For basic installation
-pip install -e .
+pip install -r requirements.txt
 
-# For development installation (includes jupyter notebooks)
-pip install -e ".[dev]"
 ```
 
 ## Development Workflow
@@ -39,11 +38,4 @@ git commit -m "Description of changes"
 git push origin main  # Or your feature branch
 ```
 
-## Usage
 
-```python
-from monetai.models.gan import Generator, Discriminator
-from monetai import utils
-
-# Your code here
-```
