@@ -83,7 +83,7 @@ python scripts/evaluate.py --model-path checkpoints/final_model --test-photos ph
 
 ### Jupyter Notebook
 
-Explore the complete workflow in our interactive notebook:
+Explore the complete workflow in the interactive notebook:
 
 ```bash
 jupyter notebook notebooks/cyclegan_demo.ipynb
