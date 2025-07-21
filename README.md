@@ -167,18 +167,6 @@ While focusing on the learning process and architectural implementation, the mod
 - **Content Preservation**: Maintains structural elements of input photographs
 - **Artistic Interpretation**: Creates visually appealing artistic renditions
 
-*Note: This project emphasizes the implementation of CycleGAN architecture and the learning process. The focus is on demonstrating understanding of generative adversarial networks rather than achieving state-of-the-art performance.*
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
 ## 📚 References
 
 - [Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks](https://arxiv.org/abs/1703.10593)
