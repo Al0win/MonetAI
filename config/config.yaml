@@ -1,0 +1,52 @@
+# MonetAI Configuration File
+# Settings for CycleGAN training and evaluation
+
+model:
+  # Image dimensions
+  image_size: 256
+  channels: 3
+  
+  # Training hyperparameters
+  batch_size: 1
+  learning_rate: 2e-4
+  
+  # Loss function weights
+  lambda_cycle: 10.0      # Weight for cycle consistency loss
+  lambda_identity: 5.0    # Weight for identity loss
+
+training:
+  # Training schedule
+  epochs: 50
+  buffer_size: 1000
+  
+  # Logging and checkpoints
+  log_freq: 100           # Log progress every N steps
+  sample_freq: 5          # Generate samples every N epochs
+  checkpoint_freq: 10     # Save checkpoint every N epochs
+  
+  # Data augmentation
+  use_random_jitter: true
+  use_random_flip: true
+
+data:
+  # Dataset paths (relative to project root)
+  photo_train_dir: "datasets/photo_jpg"
+  monet_train_dir: "datasets/monet_jpg"
+  photo_test_dir: "datasets/photo_jpg"
+  monet_test_dir: "datasets/monet_jpg"
+  
+  # Image preprocessing
+  normalize_range: [-1, 1]  # Normalize images to this range
+  resize_method: "nearest"  # Resize method for random jittering
+
+evaluation:
+  # Metrics to calculate
+  calculate_fid: true
+  calculate_lpips: false
+  generate_samples: true
+  num_samples: 10
+
+# Directories
+output_dir: "outputs"
+checkpoint_dir: "checkpoints"
+log_dir: "logs"

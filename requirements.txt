@@ -1,8 +1,34 @@
-#May be incomplete
+# Core deep learning dependencies
 tensorflow==2.17.1
 keras==3.5.0
-keras-contrib==2.0.8
 
-# Development packages
-jupyter
-notebook
+# Image processing and computer vision
+opencv-python>=4.5.0
+pillow>=8.0.0
+scikit-image>=0.18.0
+
+# Data handling and utilities
+numpy>=1.19.0
+pandas>=1.3.0
+matplotlib>=3.3.0
+seaborn>=0.11.0
+
+# Configuration and logging
+pyyaml>=5.4.0
+tqdm>=4.60.0
+
+# Jupyter notebook support
+jupyter>=1.0.0
+notebook>=6.4.0
+ipywidgets>=7.6.0
+
+# Development tools
+pytest>=6.2.0
+black>=21.0.0
+flake8>=3.9.0
+
+# Optional: For FID score calculation
+# pytorch-fid>=0.2.0  # Uncomment if using PyTorch for FID
+
+# Optional: For advanced evaluation metrics
+# lpips>=0.1.0        # Uncomment for LPIPS evaluation
