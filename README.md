@@ -9,8 +9,6 @@
 
 *Transform ordinary photographs into Monet-style paintings using CycleGAN*
 
-[Features](#features) • [Installation](#installation) • [Usage](#usage) • [Results](#results) • [Architecture](#architecture)
-
 </div>
 
 ## 🎨 Overview
