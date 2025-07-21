@@ -122,11 +122,6 @@ MonetAI implements the CycleGAN architecture with the following components:
 - **Cycle Consistency Loss**: Ensures F(G(x)) ≈ x and G(F(y)) ≈ y
 - **Identity Loss**: Preserves images already in target domain
 
-```
-Photo → Generator G → Monet Style → Generator F → Reconstructed Photo
-  ↓                      ↓                          ↑
-Discriminator X    Discriminator Y              Cycle Loss
-```
 
 ## 🎯 Dataset
 
